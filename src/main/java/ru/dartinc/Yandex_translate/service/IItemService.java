@@ -5,7 +5,9 @@ import ru.dartinc.Yandex_translate.model.Item;
 import java.util.List;
 
 
-public interface ITranslateService {
+public interface IItemService {
 
     public List<Item> getNonTranslateItems();
+
+    public void updateItem(Item item);
 }

@@ -9,21 +9,22 @@ public class Item {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id;
 
     @Column(name = "text", nullable = false)
-    String text;
+    private String text;
 
     @Column(name = "translatefrom", nullable = false)
-    String translateFrom;
+    private String translateFrom;
 
     @Column(name = "translateto", nullable = false)
-    String translateTo;
+    private String translateTo;
 
     @Column(name = "result")
-    String result;
+    private String result;
 
-    public Item() {}
+    public Item() {
+    }
 
     public String getText() {
         return text;
